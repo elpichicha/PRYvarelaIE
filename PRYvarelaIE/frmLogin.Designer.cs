@@ -45,10 +45,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label3.Location = new System.Drawing.Point(13, 54);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(10, 44);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(217, 31);
+            this.label3.Size = new System.Drawing.Size(177, 25);
             this.label3.TabIndex = 13;
             this.label3.Text = "Inicio de sesión";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -56,21 +55,20 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(300, 79);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogin.Location = new System.Drawing.Point(225, 64);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(156, 42);
+            this.btnLogin.Size = new System.Drawing.Size(117, 34);
             this.btnLogin.TabIndex = 12;
             this.btnLogin.Text = "Iniciar sesion";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(19, 204);
-            this.txtContraseña.Margin = new System.Windows.Forms.Padding(4);
+            this.txtContraseña.Location = new System.Drawing.Point(14, 166);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.Size = new System.Drawing.Size(155, 22);
+            this.txtContraseña.Size = new System.Drawing.Size(117, 20);
             this.txtContraseña.TabIndex = 11;
             this.txtContraseña.UseSystemPasswordChar = true;
             this.txtContraseña.TextChanged += new System.EventHandler(this.txtContraseña_TextChanged);
@@ -78,28 +76,25 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 181);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(11, 147);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 16);
+            this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 10;
             this.label2.Text = "Contraseña";
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(19, 129);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUsuario.Location = new System.Drawing.Point(14, 105);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(155, 22);
+            this.txtUsuario.Size = new System.Drawing.Size(117, 20);
             this.txtUsuario.TabIndex = 9;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 105);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(11, 85);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 16);
+            this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 8;
             this.label1.Text = "Usuario";
             // 
@@ -109,10 +104,9 @@
             // 
             // btnRegistrarse
             // 
-            this.btnRegistrarse.Location = new System.Drawing.Point(300, 195);
-            this.btnRegistrarse.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegistrarse.Location = new System.Drawing.Point(225, 158);
             this.btnRegistrarse.Name = "btnRegistrarse";
-            this.btnRegistrarse.Size = new System.Drawing.Size(156, 42);
+            this.btnRegistrarse.Size = new System.Drawing.Size(117, 34);
             this.btnRegistrarse.TabIndex = 15;
             this.btnRegistrarse.Text = "Registrarse aqui";
             this.btnRegistrarse.UseVisualStyleBackColor = true;
@@ -120,18 +114,17 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(315, 160);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(236, 130);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 16);
+            this.label4.Size = new System.Drawing.Size(95, 13);
             this.label4.TabIndex = 14;
             this.label4.Text = "¿No tiene cuenta?";
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(496, 291);
+            this.ClientSize = new System.Drawing.Size(372, 236);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtContraseña);
@@ -140,6 +133,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRegistrarse);
             this.Controls.Add(this.label4);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmLogin";
             this.Text = "frmLogin";
             this.ResumeLayout(false);
