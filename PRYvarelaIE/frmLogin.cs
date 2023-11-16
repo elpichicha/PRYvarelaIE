@@ -120,7 +120,7 @@ namespace PRYvarelaIE
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error en incio", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 intentos++;
                 MessageBox.Show(intentos + " de 3 intentos");
                 clearText();
