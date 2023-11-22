@@ -93,49 +93,5 @@ namespace PRYvarelaIE
             fRegistrar.ShowDialog();
             this.Hide();
         }
-
-        private void txtContraseña_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnLogin_Click_1(object sender, EventArgs e)
-        {
-            string usuario = txtUsuario.Text;
-            string contraseña = txtContraseña.Text;
-
-            clsUser objUser = clsUser.Login(usuario, contraseña);
-
-            if (objUser != null)
-            {
-                clsUser.RegisterLog(usuario);
-                this.Hide();
-                frmMain forMain = new frmMain(objUser);
-                forMain.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("Error en incio", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                intentos++;
-                MessageBox.Show(intentos + " de 3 intentos");
-                clearText();
-
-                if (intentos >= 3)
-                {
-                    MessageBox.Show("Usted se ha quedado sin intentos, por favor espere " + (contador.Interval / 1000) + " segundos", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtUsuario.Enabled = false;
-                    txtContraseña.Enabled = false;
-                    btnLogin.Enabled = false;
-
-                    contador.Tick += contador_Tick;
-                    contador.Start();
-                }
-            }
-        }
     }
 }

@@ -64,7 +64,32 @@ namespace PRYvarelaIE
 
         private void tvCarpetas_AfterSelect_1(object sender, TreeViewEventArgs e)
         {
+            TreeNode selectedNode = e.Node;
 
+            // Comprueba si el nodo seleccionado es un archivo (en lugar de una carpeta)
+            if (selectedNode.Tag != null)
+            {
+                string archivoSeleccionado = selectedNode.Tag.ToString(); // Obtiene la ruta completa del archivo
+
+                try
+                {
+                    // Lee el contenido del archivo
+                    string contenido = File.ReadAllText(archivoSeleccionado);
+
+                    rtbContenido.Visible = true;
+                    // Muestra el contenido en el RichTextBox
+                    rtbContenido.Text = contenido;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al abrir el archivo: " + ex.Message);
+                }
+            }
+            else
+            {
+                // Si no es un archivo, borra el contenido del RichTextBox
+                rtbContenido.Text = "";
+            }
         }
     }
 }

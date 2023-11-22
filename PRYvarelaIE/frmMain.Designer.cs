@@ -53,9 +53,9 @@
             this.listadoReportesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(800, 28);
-            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // gestiónToolStripMenuItem
@@ -71,7 +71,7 @@
             this.proveedoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registroProveedor});
             this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
+            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.proveedoresToolStripMenuItem.Text = "Proveedor";
             // 
             // registroProveedor
@@ -79,6 +79,7 @@
             this.registroProveedor.Name = "registroProveedor";
             this.registroProveedor.Size = new System.Drawing.Size(255, 26);
             this.registroProveedor.Text = "Registro de proveedores";
+            this.registroProveedor.Click += new System.EventHandler(this.activosToolStripMenuItem_Click);
             // 
             // listadoReportesToolStripMenuItem
             // 
@@ -101,6 +102,7 @@
             this.menuActivo.Name = "menuActivo";
             this.menuActivo.Size = new System.Drawing.Size(140, 26);
             this.menuActivo.Text = "Activos";
+            this.menuActivo.Click += new System.EventHandler(this.activosToolStripMenuItem1_Click);
             // 
             // statusStrip1
             // 
@@ -111,10 +113,9 @@
             this.lblDateMenu});
             this.statusStrip1.Location = new System.Drawing.Point(0, 424);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(19, 0, 1, 0);
             this.statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.statusStrip1.Size = new System.Drawing.Size(800, 26);
-            this.statusStrip1.TabIndex = 5;
+            this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // lblUsuarioMain
@@ -137,16 +138,20 @@
             // timer1
             // 
             this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.statusStrip1);
             this.Name = "frmMain";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Main";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
@@ -167,9 +172,9 @@
         private System.Windows.Forms.ToolStripMenuItem menuActivo;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel lblUsuarioMain;
-        private System.Windows.Forms.ToolStripStatusLabel lblUserTitle;
         private System.Windows.Forms.ToolStripStatusLabel lblDateMenu;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolStripStatusLabel lblUserTitle;
     }
 }
 

@@ -48,6 +48,12 @@ namespace PRYvarelaIE
         int contador = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
+            contador += 1;
+
+            if (contador > 1)
+            {
+                lblDateMenu.Text = Convert.ToString(DateTime.Now.ToString("HH:mm:ss"));
+            }
 
         }
 
