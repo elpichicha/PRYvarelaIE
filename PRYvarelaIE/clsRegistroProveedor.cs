@@ -18,6 +18,9 @@ namespace PRYvarelaIE
                 // Crear una lista para almacenar los IDs existentes en el archivo
                 List<int> idsExistentes = new List<int>();
 
+                //// Código para trabajar con el StreamReader
+                // ...
+             // Al salir de este bloque, el StreamReader se cerrará automáticamente.
                 using (StreamReader sr = new StreamReader(archivoProveedor))
                 {
                     string readLine;

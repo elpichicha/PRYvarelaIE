@@ -110,6 +110,7 @@ namespace PRYvarelaIE
 
         }
 
+        //actualiza los controles de la interfaz de usuario con los valores de las celdas de esa fila
         private void dgvDatosRegistro_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (e.RowIndex >= 0)

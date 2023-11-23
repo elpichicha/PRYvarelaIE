@@ -18,6 +18,7 @@ namespace PRYvarelaIE
             InitializeComponent();
         }
 
+       // delcaracion d emetodo privado queno devuelve ningun valor 
         private void txtUsuario_TextChanged(object sender, EventArgs e)
         {
             if (txtUsuario.Text != "")
