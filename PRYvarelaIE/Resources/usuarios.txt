@@ -1,0 +1,2 @@
+user:123:adm
+varela:1234:emp
